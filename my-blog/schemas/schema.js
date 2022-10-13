@@ -5,9 +5,17 @@ import createSchema from 'part:@sanity/base/schema-creator';
 import schemaTypes from 'all:part:@sanity/base/schema-type';
 
 import author from './author';
+import post from './post';
+import tag from './tag';
+import blockContent from './blockContent';
+import home from './home';
+import video from './video';
+import code from './code';
+import link from './link';
+import imageGallery from './imageGallery';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
   name: 'default',
-  types: schemaTypes.concat([author]),
+  types: schemaTypes.concat([author, post, tag, home, blockContent, video, code, link, imageGallery]),
 });

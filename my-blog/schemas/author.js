@@ -7,6 +7,7 @@ export default {
       name: 'name',
       type: 'string',
       title: 'Name',
+      validation: (Rule) => Rule.required(),
     },
     {
       name: 'role',
@@ -20,6 +21,7 @@ export default {
       options: {
         hotspot: true,
       },
+      validation: (Rule) => Rule.required(),
     },
   ],
   preview: {
